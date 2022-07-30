@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center {
+  @apply flex items-center justify-center
+}
+
+.hello-div {
+  @apply w-full h-1/2
+}
+
+.error-border {
+ @apply border-red-300 border-2 rounded-xl
+}
+
+.normal-border {
+  @apply border-gray-300 border-2 rounded-xl
+}
