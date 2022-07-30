@@ -1,9 +1,18 @@
 # README
 
-Hotwire demo for COSCUP2022
+## Hotwire demo for COSCUP2022
 
-**Ruby version**
-3.0.3
+### Demo
 
-**Rails version**
-7
+- Custom `stream_demo` tag
+- Usage
+  - Turbo Frame
+  - Turbo Stream
+
+**Ruby version**: 3.0.3
+
+**Rails version**: 7
+
+**Seed**: Run seed to create 100 articles
+
+**Contact Email**: [dantecherng@gmail.com](mailto:dantecherng@gmail.com)

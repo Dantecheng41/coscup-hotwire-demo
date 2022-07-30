@@ -1,0 +1,19 @@
+
+<!-- Turbo frame tag id match each article dom_id and partial render edit form -->
+<%= turbo_frame_tag dom_id(article), class:'h-72 w-96 gap-2 flex flex-col items-center justify-between normal-border p-2 shadow-lg' do %>
+  <div class="w-full flex flex-col gap-4">
+    <p><%= article.id %></p>
+    <div>
+      <p class="w-full text-xl text-red-400">Title</p>
+      <p class="w-full"><%= article.title %></p>
+    </div>
+    <div>
+      <p class="w-full text-xl text-red-400">Content</p>
+      <p class="w-full truncate"><%= article.content %></p>
+    </div>
+  </div>
+  <div class="flex gap-2">
+    <%= link_to 'Edit', edit_article_path(article, page: page), class:'normal-border w-16' %>
+    <%= link_to 'Delete', article_path(article, page: page), class:'normal-border w-16', data: { turbo_method: :delete } %>
+  </div>
+<%end%>

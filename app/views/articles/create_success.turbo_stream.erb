@@ -1,0 +1,3 @@
+<!-- 替換複數對象 -->
+<%= turbo_stream.replace 'new_article', partial: 'form', locals: { article: Article.new } %>
+<%= turbo_stream.replace 'page-1', partial: 'per_page', locals: { articles: @articles } %>

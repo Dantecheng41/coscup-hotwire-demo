@@ -1,0 +1,6 @@
+<!-- Infinite Scrolling -->
+<div class="center flex-wrap text-center gap-2">
+  <%= render 'articles/articles', articles: articles, page: articles.current_page %>
+  <div class="w-full bg-black h-1"></div>
+  <%= turbo_frame_tag "page-#{articles.next_page}", src: articles_path(page: articles.next_page), loading: :lazy unless articles.last_page? %>
+</div>

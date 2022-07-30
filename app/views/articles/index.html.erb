@@ -1,0 +1,10 @@
+<%= turbo_frame_tag 'new_article' do %>
+  <%= render 'form', article: @article %>
+<% end %>
+
+<%= turbo_frame_tag "page-#{@page}" do %>
+  <%= render 'per_page', articles: @articles %>
+<% end %>
+
+<!-- Broadcast -->
+<%#= turbo_stream_from :broadcast_article %>
